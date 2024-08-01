@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace VentageRepositoryModel.Model
 {
-	public class CustomerModel : DataObject
-	{
+    public class CustomerModel : DataObject, ICustomerModel
+    {
         [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
 
