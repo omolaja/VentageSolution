@@ -3,9 +3,7 @@ namespace VentageRepositoryModel.Model
 {
 	public class DataObject
 	{
-		public DataObject()
-		{
-		}
+		public long Id { get; set; }
 	}
 }
 
