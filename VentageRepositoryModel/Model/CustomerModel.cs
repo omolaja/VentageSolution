@@ -8,7 +8,7 @@ namespace VentageRepositoryModel.Model
         [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
 
-        public CustomerAddress Address { get; set; }
+        public CustomerAddressModel Address { get; set; }
 
         public string Country { get; set; }
 
@@ -17,23 +17,10 @@ namespace VentageRepositoryModel.Model
         [Url(ErrorMessage = "Please enter a valid URL")]
         public string? Website { get; set; }
 
-        public List<Contact> Contacts { get; set; }
+        public List<ContactModel> Contacts { get; set; }
 
     }
 
-   
-
-    public class CustomerAddress
-    {
-        [Required(ErrorMessage = "Address is required")]
-        public string Address { get; set; }
-
-        public string PostCode { get; set; }
-
-        [Required(ErrorMessage = "Country is required")]
-        public string Country { get; set; }
-
-        public int CustomerId { get; set; }
-    }
+    
 }
 
