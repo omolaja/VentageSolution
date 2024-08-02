@@ -6,8 +6,8 @@ using VentageRepositoryModel.Model;
 
 namespace VentageRepository.Repository
 {
-	public class CustomerRepository
-	{
+    public class CustomerRepository : ICustomerRepository
+    {
 
         private readonly IDbConnection _dbConnection;
 
@@ -38,7 +38,7 @@ namespace VentageRepository.Repository
             {
                 Name = entity.Name,
                 PhoneNumber = entity.PhoneNumber,
-                Website =entity.Address
+                Website = entity.Address
             });
             return response;
         }
