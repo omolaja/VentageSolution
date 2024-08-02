@@ -9,9 +9,7 @@ namespace VentageRepositoryModel.Model
         public string Name { get; set; }
 
         public CustomerAddressModel Address { get; set; }
-
-        public string Country { get; set; }
-
+       
         public string? PhoneNumber { get; set; }
 
         [Url(ErrorMessage = "Please enter a valid URL")]
