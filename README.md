@@ -33,7 +33,24 @@ d. Dependency Injection: ASP.NET Core's dependency injection (DI) framework is u
 e. Dapper: Dapper is chosen for ORM due to its lightweight nature and simplicity, which provides efficient and straightforward data access.
 
 
-2. Tools and Technologies Used
+2. Application Structure using Repository Pattern
+
+The application structure is organized into several layers to ensure separation of concerns and maintainability. The key layers are:
+
+a. Model Layer: Defines the data models used throughout the application.
+
+b. Repository Layer: Contains repositories that handle data access and manipulation.
+
+c. Service Layer: Encapsulates the business logic and interacts with repositories.
+
+d. Controller Layer: Handles HTTP requests and returns responses to client applications.
+
+This structure ensures a clean separation of concerns and makes the application easy to maintain and extend. Each layer has a distinct responsibility, 
+
+and dependency injection is used to manage dependencies between layers.
+
+
+3. Tools and Technologies Used
    
 a. Framework: .NET 7 and above can be used to execute the code.
 
@@ -50,7 +67,7 @@ f. C#: Programming language for implementation.
 g. Dependency Injection (DI): Used to manage service lifetimes and dependencies.
 
 
-3. Improvements and Future Enhancements
+4. Improvements and Future Enhancements
    
 a. Persistent Database: The in-memory SQLite database should be replaced with a persistent database such as SQL Server, PostgreSQL, or a cloud-based database for production use.
 
