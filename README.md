@@ -45,9 +45,7 @@ c. Service Layer: Encapsulates the business logic and interacts with repositorie
 
 d. Controller Layer: Handles HTTP requests and returns responses to client applications.
 
-This structure ensures a clean separation of concerns and makes the application easy to maintain and extend. Each layer has a distinct responsibility, 
-
-and dependency injection is used to manage dependencies between layers.
+This structure ensures a clean separation of concerns and makes the application easy to maintain and extend. Each layer has a distinct responsibility, and dependency injection is used to manage dependencies between layers.
 
 
 3. Tools and Technologies Used
