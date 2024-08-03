@@ -48,7 +48,7 @@ namespace VentageRepository.Repository
             var response = await _dbConnection.ExecuteAsync(@"
                 UPDATE Customer
                 SET Name = @Name, PhoneNumber = @PhoneNumber, Website = @Website
-                WHERE Id = @Id", new { Name = entity.Name, PhoneNumber = entity.PhoneNumber, Website = entity.Website });
+                WHERE Id = @Id", new { Name = entity.Name, PhoneNumber = entity.PhoneNumber, Website = entity.Website , Id = entity.Id});
             return response;
         }
 

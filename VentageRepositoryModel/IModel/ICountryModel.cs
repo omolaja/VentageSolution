@@ -2,6 +2,6 @@
 {
     public interface ICountryModel
     {
-        string Country { get; set; }
+        string Name { get; set; }
     }
 }

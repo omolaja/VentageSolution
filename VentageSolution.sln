@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentageAPI", "VentageAPI\VentageAPI.csproj", "{48C26A2A-4E9A-48A3-A684-DC56F7107597}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentageServices", "VentageServices\VentageServices.csproj", "{EA59A3AD-5C95-4F88-A703-3E8DD2BA3D85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{48C26A2A-4E9A-48A3-A684-DC56F7107597}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48C26A2A-4E9A-48A3-A684-DC56F7107597}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48C26A2A-4E9A-48A3-A684-DC56F7107597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA59A3AD-5C95-4F88-A703-3E8DD2BA3D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA59A3AD-5C95-4F88-A703-3E8DD2BA3D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA59A3AD-5C95-4F88-A703-3E8DD2BA3D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA59A3AD-5C95-4F88-A703-3E8DD2BA3D85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
