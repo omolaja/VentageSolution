@@ -83,5 +83,6 @@ g. Security: Implement robust authentication and authorization mechanisms to sec
 
 
 5. Development Time
+
    The application took about 2 hours to develop, with an additional 3 hours spent on documentation.
 
