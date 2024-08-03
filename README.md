@@ -54,7 +54,7 @@ a. Framework: .NET 7 and above can be used to execute the code.
 
 b. ASP.NET Core: Used for building the web API and handling dependency injection.
 
-c. SQLite: In-memory database for data storage during development.
+c. SQLite: In-memory database for data storage during development. (https://github.com/omolaja/VentageSolution/blob/main/VentageDatabaseDiagram.pdf)
 
 d. Dapper: Micro ORM for data access.
 
