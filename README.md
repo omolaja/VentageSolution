@@ -5,7 +5,7 @@ VentageAPI is a user-friendly API designed to streamline the creation and manage
 
 VentageAPI provides a set of well-defined endpoints that allow for the comprehensive handling of customer data, including their personal information, contact details, and addresses. The API ensures data consistency, security, and ease of integration, making it an ideal solution for businesses looking to integrate Ventage customer creation capabilities into their applications.
 
-Key features of VentageAPI include: (https://github.com/omolaja/VentageSolution/blob/main/VentageAPIDOCUMENTATION.docx)
+Key features of VentageAPI include: (https://github.com/omolaja/VentageSolution/blob/main/VentageAPIDOCUMENTATION.pdf)
 
 a Customer Creation: Easily create new Ventage customers by sending requests with the necessary information.
 
