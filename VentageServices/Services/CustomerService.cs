@@ -71,6 +71,13 @@ namespace VentageServices.Services
         {
             var response = await _customerRepository.GetAllCustomer();
 
+            foreach (var customer in response)
+            {
+                // Fetching and including the address and contacts in the return customer list
+                customer.Address = await _customerAddressRepository.GetCustomerAddressById(customer.Id);
+                customer.Contacts = (await _contactRepository.GetAllContactById(customer.Id)).ToList();
+            }
+
             return response.ToList();
         }
     }
