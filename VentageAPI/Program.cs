@@ -16,7 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Register IDbConnection for dependency injection for 
-builder.Services.AddScoped<IDbConnection>(sp =>
+builder.Services.AddSingleton<IDbConnection>(sp =>
 {
     var connection = new SqliteConnection("DataSource=:memory:");
     connection.Open();
@@ -73,19 +73,19 @@ builder.Services.AddScoped<IDbConnection>(sp =>
 
 
 //Dependecy Injection 
-builder.Services.AddScoped<ICustomerModel, CustomerModel>();
-builder.Services.AddScoped<DataObject>();
-builder.Services.AddScoped<ICountryModel, CountryModel>();
-builder.Services.AddScoped<ICustomerAddressModel, CustomerAddressModel>();
-builder.Services.AddScoped<IContactModel, ContactModel>();
-builder.Services.AddScoped<IContactRepository, ContactRepository>();
-builder.Services.AddScoped<ICountryRepository, CountryRepository>();
-builder.Services.AddScoped<ICustomerAddressRepository, CustomerAddressRepository>();
-builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
-builder.Services.AddScoped<ResponseModel>();
-builder.Services.AddScoped<CountriesModel>();
-builder.Services.AddScoped<ICountryService, CountryService>();
-builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddSingleton<ICustomerModel, CustomerModel>();
+builder.Services.AddSingleton<DataObject>();
+builder.Services.AddSingleton<ICountryModel, CountryModel>();
+builder.Services.AddSingleton<ICustomerAddressModel, CustomerAddressModel>();
+builder.Services.AddSingleton<IContactModel, ContactModel>();
+builder.Services.AddSingleton<IContactRepository, ContactRepository>();
+builder.Services.AddSingleton<ICountryRepository, CountryRepository>();
+builder.Services.AddSingleton<ICustomerAddressRepository, CustomerAddressRepository>();
+builder.Services.AddSingleton<ICustomerRepository, CustomerRepository>();
+builder.Services.AddSingleton<ResponseModel>();
+builder.Services.AddSingleton<CountriesModel>();
+builder.Services.AddSingleton<ICountryService, CountryService>();
+builder.Services.AddSingleton<ICustomerService, CustomerService>();
 
 
 var app = builder.Build();
