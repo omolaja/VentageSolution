@@ -82,5 +82,6 @@ f. Unit Testing: Increase test coverage with unit tests for repository methods a
 g. Security: Implement robust authentication and authorization mechanisms to secure the API.
 
 
-
+5. Development Time
+   The application took about 2 hours to develop, with an additional 3 hours spent on documentation.
 
