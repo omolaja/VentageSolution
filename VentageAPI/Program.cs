@@ -28,7 +28,8 @@ builder.Services.AddSingleton<IDbConnection>(sp =>
             Name TEXT NOT NULL,
             PhoneNumber TEXT,
             Website TEXT,
-            IsDeleted BOOLEAN NOT NULL DEFAULT 1
+            IsDeleted BOOLEAN NOT NULL DEFAULT 1,
+            DateCreated TEXT DEFAULT (datetime('now'))
         );
 
         CREATE TABLE IF NOT EXISTS Contacts (
