@@ -24,7 +24,7 @@ namespace VentageServices.Services
             {
                 _countriesModel.responseCode = "00";
                 _countriesModel.responseMessage = "Successful";
-                _countriesModel.CountryModels = response.ToList();
+                _countriesModel.Countries = response.ToList();
             }
             else
             {

@@ -46,7 +46,7 @@ namespace VentageRepository.Repository
                 FirstName = entity.FirstName,
                 LastName = entity.LastName,
                 EmailAddress = entity.EmailAddress,
-                PhoneNumber = entity.PhoneNumnber,
+                PhoneNumber = entity.PhoneNumber,
                 CustomerId = entity.CustomerId
             });
             return response;
@@ -60,10 +60,10 @@ namespace VentageRepository.Repository
                 SET FirstName = @FirstName, LastName = @LastName, EmailAddress = @EmailAddress, PhoneNumber = @PhoneNumber
                 WHERE Id = @Id AND CustomerId = @CustomerId", new
             {
-                Name = entity.FirstName,
+                FirstName = entity.FirstName,
                 LastName = entity.LastName,
                 EmailAddress = entity.EmailAddress,
-                PhoneNumber = entity.PhoneNumnber,
+                PhoneNumber = entity.PhoneNumber,
                 Id = entity.Id,
                 CustomerId = entity.CustomerId
             });

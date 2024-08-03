@@ -8,7 +8,7 @@ namespace VentageRepositoryModel.Model
 
     public class CountriesModel: ResponseModel
     {
-        public List<CountryModel> CountryModels { get; set; }
+        public List<CountryModel> Countries { get; set; }
     }
 }
 

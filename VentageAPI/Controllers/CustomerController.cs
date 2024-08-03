@@ -80,6 +80,47 @@ namespace VentageAPI.Controllers
             }
         }
 
+
+        [Route("UpdateCustomerDetail")]
+        [HttpPost]
+        public async Task<IActionResult> UpdateCustomer(
+          [FromBody] CustomerModel entity)
+        {
+            try
+            {
+                var response = await _customerService.UpdateCustomer(entity);
+
+                if (response != null)
+                    return Ok(response);
+
+                return BadRequest("An error occurred while processing your request");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
+
+        [Route("DeleteCustomerDetail/{Id}")]
+        [HttpGet]
+        public async Task<ActionResult> DeleteCustomer([FromRoute] int Id)
+        {
+            try
+            {
+                var reponse = await _customerService.DeleteCustomer(Id);
+
+                if (reponse != null)
+                    return Ok(reponse);
+
+                return BadRequest("An error occurred while processing your request");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
     }
 }
 

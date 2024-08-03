@@ -18,7 +18,7 @@ namespace VentageRepositoryModel.Model
         [EmailAddress(ErrorMessage = "Please enter a valid email address")]
         public string EmailAddress { get; set; }
 
-        public string PhoneNumnber { get; set; }
+        public string PhoneNumber { get; set; }
 
     }
 }

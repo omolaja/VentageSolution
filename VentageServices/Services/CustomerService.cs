@@ -80,6 +80,52 @@ namespace VentageServices.Services
 
             return response.ToList();
         }
+
+
+        public async Task<ResponseModel?> UpdateCustomer(CustomerModel entity)
+        {
+            var response = await _customerRepository.UpdateCustomer(entity);
+
+            if (response > 0)
+            {
+                entity.Address.CustomerId = response;
+                await _customerAddressRepository.UpdateCustomerAddress(entity.Address);
+                foreach (var contact in entity.Contacts)
+                {
+                    contact.CustomerId = response;
+                    await _contactRepository.UpdateContact(contact);
+                }
+
+                _responseModel.responseCode = "00";
+                _responseModel.responseMessage = "Successfully Updated";
+            }
+            else
+            {
+                _responseModel.responseCode = "01";
+                _responseModel.responseMessage = "Something went wrong!!!";
+            }
+
+            return _responseModel;
+        }
+
+
+        public async Task<ResponseModel?> DeleteCustomer(int entity)
+        {
+            var response = await _customerRepository.DeleteCustomer (entity);
+
+            if (response > 0)
+            {
+                _responseModel.responseCode = "00";
+                _responseModel.responseMessage = "Successfully deleted";
+            }
+            else
+            {
+                _responseModel.responseCode = "01";
+                _responseModel.responseMessage = "Something went wrong!!!";
+            }
+
+            return _responseModel;
+        }
     }
 }
 
