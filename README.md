@@ -1,4 +1,4 @@
-# VentageSolution
+# VentageAPISolution
 
 Introduction
 VentageAPI is a user-friendly API designed to streamline the creation and management of Ventage customers. It empowers client applications to seamlessly interact with the Ventage platform by sending requests to create new users and manage their details efficiently.
