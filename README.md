@@ -5,7 +5,7 @@ VentageAPI is a user-friendly API designed to streamline the creation and manage
 
 VentageAPI provides a set of well-defined endpoints that allow for the comprehensive handling of customer data, including their personal information, contact details, and addresses. The API ensures data consistency, security, and ease of integration, making it an ideal solution for businesses looking to integrate Ventage customer creation capabilities into their applications.
 
-Key features of VentageAPI include: (https://github.com/omolaja/VentageSolution/blob/main/VentageAPIDOCUMENTATION.docx)
+Key features of VentageAPI include: (https://github.com/omolaja/VentageSolution/blob/main/VentageAPIDOCUMENTATION.pdf)
 
 a Customer Creation: Easily create new Ventage customers by sending requests with the necessary information.
 
@@ -37,13 +37,13 @@ e. Dapper: Dapper is chosen for ORM due to its lightweight nature and simplicity
 
 The application structure is organized into several layers to ensure separation of concerns and maintainability. The key layers are:
 
-a. Model Layer: Defines the data models used throughout the application.
+a. Model Layer (VentageRepositoryModel): Defines the data models used throughout the application.
 
-b. Repository Layer: Contains repositories that handle data access and manipulation.
+b. Repository Layer (VentageRepository): Contains repositories that handle data access and manipulation.
 
-c. Service Layer: Encapsulates the business logic and interacts with repositories.
+c. Service Layer (VentageServices): Encapsulates the business logic and interacts with repositories.
 
-d. Controller Layer: Handles HTTP requests and returns responses to client applications.
+d. Controller Layer (VentageAPI): Handles HTTP requests and returns responses to client applications.
 
 This structure ensures a clean separation of concerns and makes the application easy to maintain and extend. Each layer has a distinct responsibility, and dependency injection is used to manage dependencies between layers.
 
@@ -54,7 +54,7 @@ a. Framework: .NET 7 and above can be used to execute the code.
 
 b. ASP.NET Core: Used for building the web API and handling dependency injection.
 
-c. SQLite: In-memory database for data storage during development.
+c. SQLite: In-memory database for data storage during development. (https://github.com/omolaja/VentageSolution/blob/main/VentageDatabaseDiagram.pdf)
 
 d. Dapper: Micro ORM for data access.
 
@@ -82,5 +82,7 @@ f. Unit Testing: Increase test coverage with unit tests for repository methods a
 g. Security: Implement robust authentication and authorization mechanisms to secure the API.
 
 
+5. Development Time
 
+   The application took about 2 hours to develop, with an additional 3 hours spent on documentation.
 
