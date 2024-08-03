@@ -38,39 +38,3 @@ Unit Testing: Increase test coverage with unit tests for repository methods and 
 Security: Implement robust authentication and authorization mechanisms to secure the API.
 
 
-
-Test Parameter
-
-CREATING A NEW CUSTOMER
-
-Sample Payload for creating new customer
-
-REQUEST
-
-{
-  "name": "Oladipo Omolaja",
-  "address": {
-    "address": "43 Tavistock Street Lution",
-    "postCode": "LU1 3UT",
-    "countryId": "1"
-  },
-  "phoneNumber": "07587993349",
-  "website": "https://localhost:7291/swagger/index.html",
-  "contacts": [
-    {
-     "customerId": 0,
-      "firstName": "Oladipo",
-      "lastName": "Oladipo",
-      "emailAddress": "dipo142008@gmail.com",
-      "phoneNumnber": "07587993349"
-    }
-  ]
-}
-
-RESPONSE
-
-{
-  "responseCode": "00",
-  "responseMessage": "Successfully Created"
-}
-
