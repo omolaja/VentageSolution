@@ -37,13 +37,13 @@ e. Dapper: Dapper is chosen for ORM due to its lightweight nature and simplicity
 
 The application structure is organized into several layers to ensure separation of concerns and maintainability. The key layers are:
 
-a. Model Layer: Defines the data models used throughout the application.
+a. Model Layer (VentageRepositoryModel): Defines the data models used throughout the application.
 
-b. Repository Layer: Contains repositories that handle data access and manipulation.
+b. Repository Layer (VentageRepository): Contains repositories that handle data access and manipulation.
 
-c. Service Layer: Encapsulates the business logic and interacts with repositories.
+c. Service Layer (VentageServices): Encapsulates the business logic and interacts with repositories.
 
-d. Controller Layer: Handles HTTP requests and returns responses to client applications.
+d. Controller Layer (VentageAPI): Handles HTTP requests and returns responses to client applications.
 
 This structure ensures a clean separation of concerns and makes the application easy to maintain and extend. Each layer has a distinct responsibility, and dependency injection is used to manage dependencies between layers.
 
