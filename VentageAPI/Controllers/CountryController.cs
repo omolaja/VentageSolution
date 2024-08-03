@@ -20,6 +20,7 @@ namespace VentageAPI.Controllers
             _countryService = countryService;
         }
 
+        [Route("GetAllCountries")]
         [HttpGet]
         public async Task<ActionResult> GetCountries()
         {
@@ -34,8 +35,8 @@ namespace VentageAPI.Controllers
             }
         }
 
-
-        [HttpGet("{Id}")]
+        [Route("GetCountryById/{Id}")]
+        [HttpGet]
         public async Task<ActionResult> GetCountyById([FromRoute] int Id)
         {
             try
