@@ -7,7 +7,7 @@ namespace VentageRepository.Repository
         Task<int> CreateCustomer(CustomerModel entity);
         Task<int> DeleteCustomer(int id);
         Task<IEnumerable<CustomerModel>> GetAllCustomer();
-        Task<CustomerAddressModel> GetCustomerById(int id);
+        Task<CustomerModel> GetCustomerById(int id);
         Task<int> UpdateCustomer(CustomerModel entity);
     }
 }

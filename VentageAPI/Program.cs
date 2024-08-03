@@ -85,6 +85,7 @@ builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<ResponseModel>();
 builder.Services.AddScoped<CountriesModel>();
 builder.Services.AddScoped<ICountryService, CountryService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
 
 
 var app = builder.Build();

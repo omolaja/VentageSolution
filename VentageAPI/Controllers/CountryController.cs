@@ -11,7 +11,7 @@ namespace VentageAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CountryController : Controller
+    public class CountryController : ControllerBase
     {
         private readonly ICountryService _countryService;
 

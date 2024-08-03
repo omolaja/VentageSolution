@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Net.Mail;
+using System.Threading.Tasks;
 using Dapper;
 using VentageRepositoryModel.Model;
 
@@ -21,10 +22,17 @@ namespace VentageRepository.Repository
             return response;
         }
 
-        public async Task<ContactModel> GetContactById(int id)
+        public async Task<IEnumerable<ContactModel>> GetAllContactById(int Id)
+        {
+            var response = await _dbConnection.QueryAsync<ContactModel>("SELECT * FROM Contacts WHERE Id = @Id AND IsDeleted = 1",
+                new { Id = Id });
+            return response;
+        }
+
+        public async Task<ContactModel> GetContactById(int Id)
         {
             var response = await _dbConnection.QueryFirstOrDefaultAsync<ContactModel>("SELECT * FROM Contacts WHERE Id = @Id AND IsDeleted = 1",
-                new { Id = id });
+                new { Id = Id });
             return response;
         }
 
@@ -62,9 +70,9 @@ namespace VentageRepository.Repository
             return response;
         }
 
-        public async Task<int> DeleteCustomer(int id)
+        public async Task<int> DeleteCustomer(int Id)
         {
-            var response = await _dbConnection.ExecuteAsync("UPDATE Contacts SET IsDeleted = 0 WHERE Id = @Id", new { Id = id });
+            var response = await _dbConnection.ExecuteAsync("UPDATE Contacts SET IsDeleted = 0 WHERE Id = @Id", new { Id = Id });
             return response;
         }
 

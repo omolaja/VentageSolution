@@ -23,10 +23,10 @@ namespace VentageRepository.Repository
             return response;
         }
 
-        public async Task<CustomerAddressModel> GetCustomerAddressById(int id)
+        public async Task<CustomerAddressModel> GetCustomerAddressById(int Id)
         {
             var response = await _dbConnection.QueryFirstOrDefaultAsync<CustomerAddressModel>("SELECT * FROM CustomerAddress WHERE Id = @Id AND IsDeleted = 1",
-                new { Id = id });
+                new { Id = Id });
             return response;
         }
 
