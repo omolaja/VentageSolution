@@ -1,6 +1,6 @@
 # VentageAPISolution
 
-Introduction
+# Introduction
 
 VentageAPI is a user-friendly API designed to streamline the creation and management of Ventage customers. It empowers client applications to seamlessly interact with the Ventage platform by sending requests to create new users and manage their details efficiently.
 
@@ -27,7 +27,7 @@ git clone https://github.com/omolaja/VentageSolution.git
 cd VengageSolution
 
 
-1. Design Decisions
+# 1. Design Decisions
 
 a. In-Memory Database: The implementation uses an in-memory SQLite database for simplicity and ease of setup during development.
 
@@ -41,7 +41,7 @@ d. Dependency Injection: ASP.NET Core's dependency injection (DI) framework is u
 e. Dapper: Dapper is chosen for ORM due to its lightweight nature and simplicity, which provides efficient and straightforward data access.
 
 
-2. Application Structure using Repository Pattern
+# 2. Application Structure using Repository Pattern
 
 The application structure is organized into several layers to ensure the separation of concerns and maintainability. The key layers are:
 
@@ -56,7 +56,7 @@ d. Controller Layer (VentageAPI): Handles HTTP requests and returns responses to
 This structure ensures a clean separation of concerns and makes the application easy to maintain and extend. Each layer has a distinct responsibility, and dependency injection is used to manage dependencies between layers.
 
 
-3. Tools and Technologies Used
+# 3. Tools and Technologies Used
    
 a. Framework: .NET 7 and above can be used to execute the code.
 
@@ -73,7 +73,7 @@ f. C#: Programming language for implementation.
 g. Dependency Injection (DI): Used to manage service lifetimes and dependencies.
 
 
-4. Improvements and Future Enhancements
+# 4. Improvements and Future Enhancements
    
 a. Persistent Database: The in-memory SQLite database should be replaced with a persistent database such as SQL Server, PostgreSQL, or a cloud-based database for production use.
 
@@ -90,11 +90,11 @@ f. Unit Testing: Increase test coverage with unit tests for repository methods a
 g. Security: Implement robust authentication and authorization mechanisms to secure the API.
 
 
-5. Development Time
+# 5. Development Time
 
    The application took about 2 hours to develop, with an additional 3 hours on documentation.
 
-6. Contributing
+# 6. Contributing
    
 Guidelines for contributing to the project.
 
