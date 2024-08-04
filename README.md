@@ -21,7 +21,7 @@ e. Documentation: Comprehensive documentation to facilitate easy integration and
 VentageAPI is built using modern technologies and follows best practices in API development, ensuring reliability and performance. Whether you are developing a web application, mobile app, or any other client application, VentageAPI provides the tools you need to integrate Ventage customer management seamlessly.
 
 # Clone the repository
-git clone https://github.com/yourusername/projectname.git
+git clone https://github.com/omolaja/VentageSolution.git
 
 # Navigate to the project directory
 cd VengageSolution
