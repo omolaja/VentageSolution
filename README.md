@@ -66,7 +66,7 @@ c. SQLite: In-memory database for data storage during development. (https://gith
 
 d. Dapper: Micro ORM for data access.
 
-e. Swagger/OpenAPI: Used for API documentation and testing.
+e. Swagger/OpenAPI: Used for API documentation and testing. (https://github.com/omolaja/VentageSolution/blob/main/openapi.pdf)
 
 f. C#: Programming language for implementation.
 
