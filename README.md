@@ -99,9 +99,13 @@ g. Security: Implement robust authentication and authorization mechanisms to sec
 Guidelines for contributing to the project.
 
 a. Fork the repository.
+
 b. Create a new branch (git checkout -b feature/your-feature).
+
 c. Commit your changes (git commit -am 'Add some feature').
+
 d. Push to the branch (git push origin feature/your-feature).
+
 e. Create a new Pull Request.
 
 
