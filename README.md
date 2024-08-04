@@ -26,6 +26,7 @@ git clone https://github.com/omolaja/VentageSolution.git
 # Navigate to the project directory
 cd VengageSolution
 
+
 1. Design Decisions
 
 a. In-Memory Database: The implementation uses an in-memory SQLite database for simplicity and ease of setup during development.
@@ -42,7 +43,7 @@ e. Dapper: Dapper is chosen for ORM due to its lightweight nature and simplicity
 
 2. Application Structure using Repository Pattern
 
-The application structure is organized into several layers to ensure separation of concerns and maintainability. The key layers are:
+The application structure is organized into several layers to ensure the separation of concerns and maintainability. The key layers are:
 
 a. Model Layer (VentageRepositoryModel): Defines the data models used throughout the application.
 
@@ -80,7 +81,7 @@ b. Database Migrations: Implement database migration tools like Entity Framework
 
 c. Caching: Introduce caching mechanisms to improve performance by reducing database load for frequently accessed data.
 
-d. Pagination and Filtering: Implement pagination and filtering for endpoints that return lists of data to handle large datasets more efficiently.
+d. Pagination and Filtering: Implement pagination and filtering for endpoints that return data lists to handle large datasets more efficiently.
 
 e. Error Handling: Enhance error handling and logging mechanisms to provide more insightful diagnostics and maintainability.
 
@@ -91,5 +92,16 @@ g. Security: Implement robust authentication and authorization mechanisms to sec
 
 5. Development Time
 
-   The application took about 2 hours to develop, with an additional 3 hours spent on documentation.
+   The application took about 2 hours to develop, with an additional 3 hours on documentation.
+
+6. Contributing
+   
+Guidelines for contributing to the project.
+
+a. Fork the repository.
+b. Create a new branch (git checkout -b feature/your-feature).
+c. Commit your changes (git commit -am 'Add some feature').
+d. Push to the branch (git push origin feature/your-feature).
+e. Create a new Pull Request.
+
 
