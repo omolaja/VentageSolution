@@ -15,7 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Register IDbConnection for dependency injection for 
+// Register IDbConnection for dependency injection for inmemory
 builder.Services.AddSingleton<IDbConnection>(sp =>
 {
     var connection = new SqliteConnection("DataSource=:memory:");
